@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireStack - Where ambitious companies hire exceptional talent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#1c1c1c',
+                            black: '#121212',
+                            gray: '#f5f5f5',
+                            accent: '#FDF1EB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="bg-[#FFFDFB] text-brand-dark overflow-x-hidden min-h-screen relative font-sans antialiased selection:bg-brand-dark selection:text-white">
+
+    <!-- Aurora Background layer -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden aurora-bg">
+        <div
+            class="absolute top-[10%] left-[20%] w-[600px] h-[600px] bg-[#FFE0B2] rounded-full mix-blend-multiply filter blur-[120px] opacity-70 animate-blob">
+        </div>
+        <div
+            class="absolute top-[20%] right-[10%] w-[500px] h-[500px] bg-[#FFF0E5] rounded-full mix-blend-multiply filter blur-[100px] opacity-60 animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="absolute bottom-[10%] left-[10%] w-[700px] h-[700px] bg-[#FFA500]/30 rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-4000">
+        </div>
+        <div
+            class="absolute bottom-[5%] right-[20%] w-[600px] h-[600px] bg-[#E1BEE7]/60 rounded-full mix-blend-multiply filter blur-[150px] opacity-80 animate-blob">
+        </div>
+    </div>
+
+    <!-- Main Content wrapper -->
+    <div class="relative z-10 flex flex-col min-h-screen">
+
+        <!-- Navigation -->
+        <nav class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+            <div
+                class="bg-brand-dark text-white rounded-full flex items-center justify-between px-6 py-3 md:py-4 shadow-xl">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <a href="index.html" class="font-sans font-medium text-2xl tracking-tight">HireStack</a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8 text-sm text-gray-300 font-medium">
+                    <a href="companies.html" class="hover:text-white transition-colors duration-200">For companies</a>
+                    <a href="recruiters.html" class="hover:text-white transition-colors duration-200">For recruiters</a>
+                    <a href="customers.html" class="hover:text-white transition-colors duration-200">Customers</a>
+                    <a href="resources.html" class="hover:text-white transition-colors duration-200">Resources</a>
+                    <a href="about.html" class="hover:text-white transition-colors duration-200">About Us</a>
+                    <a href="career.html" class="hover:text-white transition-colors duration-200">Career</a>
+                </div>
+
+                <!-- Auth Buttons -->
+                <div class="hidden md:flex items-center space-x-4 text-sm">
+                    <a href="#" class="text-gray-300 hover:text-white font-medium transition-colors duration-200">Sign
+                        Up</a>
+                    <a href="#"
+                        class="bg-white text-brand-dark hover:bg-gray-100 font-medium px-5 py-2.5 rounded-full transition-colors duration-200 shadow-sm">
+                        Book A Demo
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <main class="flex-grow flex flex-col items-center pt-16 lg:pt-24 px-4 w-full">
+
+            <!-- Badge -->
+            <div
+                class="inline-flex items-center bg-[#F1F1F1]/80 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-medium text-gray-600 mb-8 border border-white/50 shadow-sm">
+                Hirestack raises $25M to reinvent how hiring gets done <span class="ml-1.5 text-base">🎉</span>
+            </div>
+
+            <!-- Typography -->
+            <div class="text-center max-w-4xl mx-auto mb-10">
+                <h1
+                    class="font-serif text-5xl md:text-6xl lg:text-7xl text-brand-black leading-[1.1] mb-6 tracking-tight font-medium">
+                    Where ambitious companies hire exceptional talent
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-medium leading-relaxed">
+                    Hirestack is building the future of hiring. Match with top recruiters and fill your hardest
+                    roles—faster than ever.
+                </p>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex flex-col sm:flex-row items-center gap-4 z-20">
+                <a href="#"
+                    class="bg-brand-dark text-white px-8 py-3.5 rounded-full font-medium hover:bg-black transition duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                    Start For Free
+                </a>
+                <a href="#"
+                    class="bg-transparent border-[1.5px] border-gray-300 text-brand-dark px-8 py-3.5 rounded-full font-medium hover:bg-gray-50 transition duration-200">
+                    Know Us More
+                </a>
+            </div>
+
+            <!-- Connectivity Map Section -->
+            <div class="relative w-full max-w-6xl mx-auto h-[600px] mt-12 md:mt-24 pointer-events-none"
+                id="node-container">
+                <!-- SVG Line Canvas -->
+                <svg class="absolute inset-0 w-full h-full" id="connection-svg" preserveAspectRatio="xMidYMid slice">
+                    <!-- Path will be generated or drawn here -->
+                    <defs>
+                        <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2" />
+                            <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+                            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2" />
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="3" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+                    <path id="curve-path" fill="none" class="animated-path" stroke="white" stroke-width="2.5"
+                        filter="url(#glow)" />
+                </svg>
+
+                <!-- Floating Nodes (Cards) -->
+                <!-- Use class .node to mark points for the SVG drawing script -->
+
+                <!-- 1. Adam -->
+                <div class="absolute node pointer-events-auto cursor-pointer" style="top: 10%; left: 20%;"
+                    data-index="1">
+                    <div class="glass-card flex items-center p-2 pr-4 rounded-xl gap-3">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Adam"
+                            class="w-12 h-12 rounded-lg object-cover shadow-inner">
+                        <div class="pr-2">
+                            <h3 class="font-serif font-semibold text-lg leading-none mb-1">Adam</h3>
+                            <p class="text-xs text-gray-500 font-medium">Graphic Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Jason -->
+                <div class="absolute node pointer-events-auto cursor-pointer"
+                    style="top: -5%; left: 50%; transform: translateX(-50%);" data-index="2">
+                    <div
+                        class="glass-card flex flex-col items-center justify-center p-2 rounded-xl text-center min-w-[120px]">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Jason"
+                            class="w-10 h-10 rounded-full object-cover mb-2 shadow-sm">
+                        <h3 class="font-serif font-medium text-sm leading-none mb-1">Jason</h3>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">PHP Developer</p>
+                    </div>
+                </div>
+
+                <!-- 3. Miley -->
+                <div class="absolute node pointer-events-auto cursor-pointer" style="top: 15%; right: 20%;"
+                    data-index="3">
+                    <div
+                        class="glass-card flex flex-col items-center justify-center p-2 rounded-xl text-center min-w-[130px]">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="Miley"
+                            class="w-10 h-10 rounded-full object-cover mb-2 shadow-sm">
+                        <h3 class="font-serif font-medium text-sm leading-none mb-1">Miley</h3>
+                        <p class="text-[10px] text-gray-500 font-medium">Final Year Student</p>
+                    </div>
+                </div>
+
+                <!-- 4. Mitchell -->
+                <div class="absolute node pointer-events-auto cursor-pointer z-10" style="top: 45%; left: 5%;"
+                    data-index="4">
+                    <div
+                        class="bg-white/95 backdrop-blur-xl shadow-2xl rounded-2xl p-4 min-w-[280px] border border-white hover:scale-105 transition-transform duration-300">
+                        <div class="flex items-center gap-4 mb-5 border-b border-gray-100 pb-4">
+                            <img src="https://i.pravatar.cc/150?img=14" alt="Mitchell"
+                                class="w-14 h-14 rounded-xl object-cover">
+                            <div>
+                                <h3 class="font-serif font-semibold text-xl leading-none mb-1.5">Mitchell</h3>
+                                <p class="text-sm text-gray-500 font-medium">Art Director</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-end">
+                            <p class="text-sm font-medium text-gray-800">Hiring <span
+                                    class="text-gray-500 font-serif ml-1">Motion Designer</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Anthony -->
+                <div class="absolute node pointer-events-auto cursor-pointer z-10" style="top: 35%; right: 5%;"
+                    data-index="5">
+                    <div
+                        class="bg-white/95 backdrop-blur-xl shadow-2xl rounded-2xl p-4 min-w-[300px] border border-white hover:scale-105 transition-transform duration-300">
+                        <div class="flex items-center gap-4 mb-5 border-b border-gray-100 pb-4">
+                            <img src="https://i.pravatar.cc/150?img=15" alt="Anthony"
+                                class="w-14 h-14 rounded-full object-cover">
+                            <div>
+                                <h3 class="font-serif font-semibold text-xl leading-none mb-1.5">Anthony</h3>
+                                <p class="text-sm text-gray-500 font-medium">Founder at Zimpeta</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-end">
+                            <p class="text-sm font-medium text-gray-800">Hiring <span
+                                    class="text-gray-500 font-serif ml-1">Software Developer</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Jesscia -->
+                <div class="absolute node pointer-events-auto cursor-pointer z-10"
+                    style="top: 80%; left: 40%; transform: translateX(-50%);" data-index="6">
+                    <div
+                        class="bg-white/95 backdrop-blur-xl shadow-2xl rounded-2xl p-4 min-w-[260px] border border-white hover:scale-105 transition-transform duration-300">
+                        <div class="flex items-center gap-4 mb-5 border-b border-gray-100 pb-4">
+                            <img src="https://i.pravatar.cc/150?img=16" alt="Jesscia"
+                                class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <h3 class="font-serif font-semibold text-xl leading-none mb-1.5">Jesscia</h3>
+                                <p class="text-sm text-gray-500 font-medium">Head of Marketing</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-end">
+                            <p class="text-sm font-medium text-gray-800">Hiring <span
+                                    class="text-gray-500 font-serif ml-1">Graphic Designer</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Bottom Left Small Node -->
+                <div class="absolute node pointer-events-auto cursor-pointer" style="top: 90%; left: 15%;"
+                    data-index="7">
+                    <div
+                        class="glass-card flex flex-col items-center justify-center p-2 rounded-xl text-center min-w-[100px]">
+                        <img src="https://i.pravatar.cc/150?img=68" alt="Adam"
+                            class="w-8 h-8 rounded-full object-cover mb-1 shadow-sm">
+                        <h3 class="font-serif font-medium text-xs leading-none mb-0.5">Adam</h3>
+                        <p class="text-[8px] text-gray-500 font-medium uppercase">Graphic Designer</p>
+                    </div>
+                </div>
+
+                <!-- 8. Kenji -->
+                <div class="absolute node pointer-events-auto cursor-pointer" style="top: 85%; right: 20%;"
+                    data-index="8">
+                    <div
+                        class="glass-card flex flex-col items-center justify-center p-2 rounded-xl text-center min-w-[110px]">
+                        <img src="https://i.pravatar.cc/150?img=18" alt="Kenji"
+                            class="w-10 h-10 rounded-full object-cover mb-1 shadow-sm">
+                        <h3 class="font-serif font-medium text-sm leading-none mb-0.5">Kenji</h3>
+                        <p class="text-[9px] text-gray-500 font-medium uppercase">Motion Designer</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Script for SVG drawing and interactions -->
+    <script src="script.js"></script>
+</body>
+
+</html>

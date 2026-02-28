@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireStack - Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#1c1c1c',
+                            black: '#121212',
+                            gray: '#f5f5f5',
+                            accent: '#FDF1EB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="bg-[#FFFDFB] text-brand-dark overflow-x-hidden min-h-screen relative font-sans antialiased selection:bg-brand-dark selection:text-white">
+
+    <!-- Aurora Background layer -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden aurora-bg">
+        <div
+            class="absolute top-[10%] left-[20%] w-[600px] h-[600px] bg-[#E1BEE7]/40 rounded-full mix-blend-multiply filter blur-[120px] opacity-70 animate-blob">
+        </div>
+        <div
+            class="absolute bottom-[20%] right-[10%] w-[700px] h-[700px] bg-[#FFE0B2]/60 rounded-full mix-blend-multiply filter blur-[150px] opacity-80 animate-blob animation-delay-2000">
+        </div>
+    </div>
+
+    <!-- Main Content wrapper -->
+    <div class="relative z-10 flex flex-col min-h-screen">
+
+        <!-- Navigation -->
+        <nav class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+            <div
+                class="bg-brand-dark text-white rounded-full flex items-center justify-between px-6 py-3 md:py-4 shadow-xl">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <a href="index.html" class="font-sans font-medium text-2xl tracking-tight">HireStack</a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8 text-sm text-gray-300 font-medium">
+                    <a href="companies.html" class="hover:text-white transition-colors duration-200">For companies</a>
+                    <a href="recruiters.html" class="hover:text-white transition-colors duration-200">For recruiters</a>
+                    <a href="customers.html" class="hover:text-white transition-colors duration-200">Customers</a>
+                    <a href="resources.html" class="text-white transition-colors duration-200">Resources</a>
+                    <a href="about.html" class="hover:text-white transition-colors duration-200">About Us</a>
+                    <a href="career.html" class="hover:text-white transition-colors duration-200">Career</a>
+                </div>
+
+                <!-- Auth Buttons -->
+                <div class="hidden md:flex items-center space-x-4 text-sm">
+                    <a href="#" class="text-gray-300 hover:text-white font-medium transition-colors duration-200">Sign
+                        Up</a>
+                    <a href="#"
+                        class="bg-white text-brand-dark hover:bg-gray-100 font-medium px-5 py-2.5 rounded-full transition-colors duration-200 shadow-sm">
+                        Book A Demo
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <main class="flex-grow flex flex-col items-center pt-20 lg:pt-32 px-4 w-full">
+
+            <!-- Typography -->
+            <div class="text-center max-w-4xl mx-auto mb-16 z-10 px-4">
+                <h1
+                    class="font-serif text-5xl md:text-6xl text-brand-black leading-[1.1] mb-6 tracking-tight font-medium">
+                    Industry insights & hiring guides
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-medium leading-relaxed">
+                    The latest strategies for finding, evaluating, and closing the best candidates in the market.
+                </p>
+            </div>
+
+            <!-- Blog Grid Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto mb-24 z-10 px-4">
+
+                <!-- Article 1 -->
+                <a href="#"
+                    class="glass-card rounded-[2rem] p-6 hover:-translate-y-2 transition duration-300 group flex flex-col shadow-sm">
+                    <div class="w-full aspect-[4/3] bg-gray-200 rounded-2xl overflow-hidden mb-6 relative">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Image"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="mb-3">
+                        <span
+                            class="inline-block bg-brand-dark text-white px-3 py-1 text-[10px] font-bold uppercase tracking-wider rounded-lg">Guide</span>
+                        <span class="text-xs text-gray-500 font-medium ml-2">Feb 14, 2026</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold mb-3 text-brand-dark group-hover:underline">The 2026
+                        Developer Salary Report</h3>
+                    <p class="text-sm text-gray-600 line-clamp-2 font-medium mb-6">A deep dive into compensation
+                        expectations for top-tier software engineers across global markets.</p>
+                </a>
+
+                <!-- Article 2 -->
+                <a href="#"
+                    class="glass-card rounded-[2rem] p-6 hover:-translate-y-2 transition duration-300 group flex flex-col shadow-sm">
+                    <div class="w-full aspect-[4/3] bg-gray-200 rounded-2xl overflow-hidden mb-6 relative">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Image"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="mb-3">
+                        <span
+                            class="inline-block bg-[#FDF1EB] text-orange-800 px-3 py-1 text-[10px] font-bold uppercase tracking-wider rounded-lg">Best
+                            Practices</span>
+                        <span class="text-xs text-gray-500 font-medium ml-2">Jan 29, 2026</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold mb-3 text-brand-dark group-hover:underline">Conducting
+                        Better Technical Interviews</h3>
+                    <p class="text-sm text-gray-600 line-clamp-2 font-medium mb-6">Why Leetcode-style tests are failing
+                        you, and what elite engineering managers are doing instead.</p>
+                </a>
+
+                <!-- Article 3 -->
+                <a href="#"
+                    class="glass-card rounded-[2rem] p-6 hover:-translate-y-2 transition duration-300 group flex flex-col shadow-sm">
+                    <div class="w-full aspect-[4/3] bg-gray-200 rounded-2xl overflow-hidden mb-6 relative">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Image"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="mb-3">
+                        <span
+                            class="inline-block bg-purple-100 text-purple-800 px-3 py-1 text-[10px] font-bold uppercase tracking-wider rounded-lg">Case
+                            Study</span>
+                        <span class="text-xs text-gray-500 font-medium ml-2">Jan 12, 2026</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold mb-3 text-brand-dark group-hover:underline">How FinFlow
+                        hired their founding team</h3>
+                    <p class="text-sm text-gray-600 line-clamp-2 font-medium mb-6">Inside the hiring strategy that
+                        helped FinFlow scale from zero to sixty employees in less than a year.</p>
+                </a>
+            </div>
+
+            <!-- Newsletter minimal -->
+            <div
+                class="w-full max-w-4xl mx-auto mb-20 z-10 text-center glass-card p-10 rounded-3xl border border-white">
+                <h3 class="font-serif text-3xl font-semibold mb-2">Never miss an insight</h3>
+                <p class="text-gray-600 font-medium mb-8">Join 15,000+ founders and recruiters on our weekly newsletter.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                    <input type="email" placeholder="Your work email"
+                        class="flex-grow px-5 py-3 rounded-full border border-gray-200 outline-none focus:border-gray-400 bg-white shadow-sm font-medium">
+                    <button
+                        class="bg-brand-dark text-white px-6 py-3 rounded-full font-medium hover:bg-black transition cursor-pointer">Subscribe</button>
+                </form>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireStack - Customers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#1c1c1c',
+                            black: '#121212',
+                            gray: '#f5f5f5',
+                            accent: '#FDF1EB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="bg-[#FFFDFB] text-brand-dark overflow-x-hidden min-h-screen relative font-sans antialiased selection:bg-brand-dark selection:text-white">
+
+    <!-- Aurora Background layer -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden aurora-bg">
+        <div
+            class="absolute top-[20%] right-[10%] w-[500px] h-[500px] bg-[#FFF0E5] rounded-full mix-blend-multiply filter blur-[100px] opacity-60 animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="absolute bottom-[20%] left-[20%] w-[700px] h-[700px] bg-[#E1BEE7]/50 rounded-full mix-blend-multiply filter blur-[150px] opacity-80 animate-blob animation-delay-4000">
+        </div>
+    </div>
+
+    <!-- Main Content wrapper -->
+    <div class="relative z-10 flex flex-col min-h-screen">
+
+        <!-- Navigation -->
+        <nav class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+            <div
+                class="bg-brand-dark text-white rounded-full flex items-center justify-between px-6 py-3 md:py-4 shadow-xl">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <a href="index.html" class="font-sans font-medium text-2xl tracking-tight">HireStack</a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8 text-sm text-gray-300 font-medium">
+                    <a href="companies.html" class="hover:text-white transition-colors duration-200">For companies</a>
+                    <a href="recruiters.html" class="hover:text-white transition-colors duration-200">For recruiters</a>
+                    <a href="customers.html" class="text-white transition-colors duration-200">Customers</a>
+                    <a href="resources.html" class="hover:text-white transition-colors duration-200">Resources</a>
+                    <a href="about.html" class="hover:text-white transition-colors duration-200">About Us</a>
+                    <a href="career.html" class="hover:text-white transition-colors duration-200">Career</a>
+                </div>
+
+                <!-- Auth Buttons -->
+                <div class="hidden md:flex items-center space-x-4 text-sm">
+                    <a href="#" class="text-gray-300 hover:text-white font-medium transition-colors duration-200">Sign
+                        Up</a>
+                    <a href="#"
+                        class="bg-white text-brand-dark hover:bg-gray-100 font-medium px-5 py-2.5 rounded-full transition-colors duration-200 shadow-sm">
+                        Book A Demo
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <main class="flex-grow flex flex-col items-center pt-20 lg:pt-32 px-4 w-full">
+            <!-- Typography -->
+            <div class="text-center max-w-4xl mx-auto mb-20 z-10 px-4">
+                <h1
+                    class="font-serif text-5xl md:text-6xl text-brand-black leading-[1.1] mb-6 tracking-tight font-medium">
+                    Loved by teams scaling rapidly
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-medium leading-relaxed">
+                    Thousands of high-performing companies found their founding engineers, CMOs, and top sales reps
+                    through HireStack.
+                </p>
+            </div>
+
+            <!-- Bento/Grid Testimonials Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl mx-auto mb-24 z-10 px-4">
+
+                <div
+                    class="glass-card p-6 md:p-8 rounded-3xl col-span-1 border border-white lg:col-span-2 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://i.pravatar.cc/150?img=60" alt="Avatar"
+                            class="w-12 h-12 rounded-full border-2 border-white shadow-sm">
+                        <span class="text-xs font-bold text-gray-400 tracking-wider">ACME CORP</span>
+                    </div>
+                    <p class="font-serif text-2xl mb-6 text-brand-dark">"Hirestack helped us double our engineering team
+                        size in two quarters without compromising on the top 1% standard we require."</p>
+                    <div class="mt-auto pt-4 border-t border-gray-100 flex flex-col">
+                        <span class="font-semibold text-lg text-brand-dark">Sarah Jenkins</span>
+                        <span class="text-sm text-gray-500 font-medium">VP of People</span>
+                    </div>
+                </div>
+
+                <div
+                    class="glass-card p-6 md:p-8 rounded-3xl col-span-1 shadow-sm hover:shadow-md transition flex flex-col items-center text-center justify-center">
+                    <span class="text-6xl font-serif text-brand-dark font-semibold mb-2">3x</span>
+                    <p class="text-gray-600 font-medium tracking-wide">Faster time to hire for C-level executives
+                        compared to traditional agencies.</p>
+                </div>
+
+                <div
+                    class="glass-card p-6 md:p-8 rounded-3xl shadow-sm hover:shadow-md border border-white/50 transition flex flex-col">
+                    <div class="flex items-center justify-between mb-4">
+                        <img src="https://i.pravatar.cc/150?img=33" alt="Avatar" class="w-10 h-10 rounded-full">
+                    </div>
+                    <p class="font-serif text-lg leading-relaxed text-gray-800 flex-grow">"The recruiters on the
+                        platform clearly understand what technical screening requires."</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex flex-col">
+                        <span class="font-semibold text-base text-brand-dark">Ahmed</span>
+                        <span class="text-sm text-gray-500 font-medium">Founder at FinFlow</span>
+                    </div>
+                </div>
+
+                <div
+                    class="glass-card p-6 md:p-8 rounded-3xl shadow-sm hover:shadow-md border border-white/50 transition flex flex-col">
+                    <div class="flex items-center justify-between mb-4">
+                        <img src="https://i.pravatar.cc/150?img=47" alt="Avatar" class="w-10 h-10 rounded-full">
+                    </div>
+                    <p class="font-serif text-lg leading-relaxed text-gray-800 flex-grow">"Finally an experience that
+                        focuses on candidate quality instead of volume spam."</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex flex-col">
+                        <span class="font-semibold text-base text-brand-dark">Jessica</span>
+                        <span class="text-sm text-gray-500 font-medium">Head of Recruiting</span>
+                    </div>
+                </div>
+
+                <div
+                    class="glass-card p-6 md:p-8 rounded-3xl shadow-sm hover:shadow-md border border-white/50 transition flex flex-col">
+                    <div class="flex items-center justify-between mb-4">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Avatar" class="w-10 h-10 rounded-full">
+                    </div>
+                    <p class="font-serif text-lg leading-relaxed text-gray-800 flex-grow">"I use HireStack as my secret
+                        weapon to beat competitors to the best software engineers."</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex flex-col">
+                        <span class="font-semibold text-base text-brand-dark">Michael</span>
+                        <span class="text-sm text-gray-500 font-medium">CTO, Web3 DAO</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="text-center pb-24 z-20">
+                <a href="#"
+                    class="bg-brand-dark text-white px-8 py-3.5 rounded-full font-medium hover:bg-black transition duration-200 shadow-lg hover:-translate-y-0.5 inline-block">
+                    Join Our Customers
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
