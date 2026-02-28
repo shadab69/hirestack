@@ -100,4 +100,42 @@ document.addEventListener('DOMContentLoaded', () => {
         // Ensure path stays attached during float
         // (A fully reactive path needs RequestAnimationFrame, but for slight floats, static is fine)
     });
+
+    // --- ACCORDION INTERACTION ---
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    if (accordionItems.length > 0) {
+        accordionItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                // Close all
+                accordionItems.forEach(innerItem => {
+                    innerItem.classList.remove('active');
+                    const content = innerItem.querySelector('.accordion-content');
+                    if (content) content.classList.add('hidden');
+                    const icon = innerItem.querySelector('.accordion-icon');
+                    if (icon) icon.textContent = '+';
+                    const title = innerItem.querySelector('.title-text');
+                    if (title) {
+                        title.classList.remove('font-semibold', 'text-brand-dark');
+                        title.classList.add('font-medium', 'text-gray-500');
+                    }
+                });
+
+                // Open clicked if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                    const content = item.querySelector('.accordion-content');
+                    if (content) content.classList.remove('hidden');
+                    const icon = item.querySelector('.accordion-icon');
+                    if (icon) icon.textContent = '-';
+                    const title = item.querySelector('.title-text');
+                    if (title) {
+                        title.classList.remove('font-medium', 'text-gray-500');
+                        title.classList.add('font-semibold', 'text-brand-dark');
+                    }
+                }
+            });
+        });
+    }
 });
